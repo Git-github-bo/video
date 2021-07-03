@@ -6,8 +6,8 @@ const progress = document.getElementById('progress');
 const timestamp = document.getElementById('timestamp');
 
 // 切换视频的播放/暂停
-// paused 视频已暂停属性，用于返回视频是否已暂停，它是只读属性。
-// video.paused 如果视频已暂停返回布尔值true,否则返回false
+// paused 监听属性，视频已暂停返回true否则返回false，它是只读属性。
+// 语法：audio|video.paused 
 function toggleVideoStatus() {
     if (video.paused) {
         video.play();
